@@ -48,7 +48,7 @@ export default function RSVP() {
     const data = {
       "entry.2001389412": formData.name,
       "entry.908209112": formData.phone,
-      "entry.346994890": formData.guests,
+      "entry.346994890": formData.guests === "0" ? "No asistiré" : formData.guests,
       "entry.1050979229": formData.message,
     }
 
